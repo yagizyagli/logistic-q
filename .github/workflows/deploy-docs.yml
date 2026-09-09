@@ -1,0 +1,36 @@
+name: Deploy Framework Docs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'README.md'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Documentation Engine
+        run: |
+          pip install mkdocs-material
+
+      - name: Build and Deploy to GitHub Pages
+        run: |
+          if [ ! -f mkdocs.yml ]; then
+            echo "site_name: LogisticQ Framework Documentation" > mkdocs.yml
+            echo "theme: material" >> mkdocs.yml
+          fi
+          mkdocs gh-deploy --force

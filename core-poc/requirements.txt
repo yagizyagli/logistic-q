@@ -1,0 +1,5 @@
+numpy>=1.24.0
+qiskit>=1.0.0
+dwave-ocean-sdk>=6.0.0
+mkdocs-material>=9.0.0
+streamlit>=1.30.0

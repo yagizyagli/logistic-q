@@ -1,0 +1,6 @@
+Metric_Name,Classical_Baseline,Quantum_Target,Projected_Savings_Percent,Unit
+Route_Calculation_Time,120,3,97.5,Minutes
+Average_Daily_Fleet_Mileage,25000,21250,15.0,Miles
+Monthly_Fuel_Expenditure,85000,72250,15.0,USD
+Annual_Carbon_Emission_Tons,4500,4050,10.0,Co2_Tons
+Vehicle_Idle_Time_At_Docks,45,36,20.0,Minutes
