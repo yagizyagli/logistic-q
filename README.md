@@ -96,7 +96,7 @@ We love your patches! LogisticQ is a fully community-driven open-source project.
 ---
 
 ## ✍️ Author & Developer 
-*   **Yağız Yağlı:** [@yagizyagli](https://github.com/yagizyagli)
+* **Yağız Yağlı:** [@yagizyagli](https://github.com/yagizyagli)
 
 ---
 
